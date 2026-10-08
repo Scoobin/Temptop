@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "temp-top"
+version = "1.0.0"
+description = "A Linux terminal hardware temperature monitor and Braille grapher inspired by Psensor and btop"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Temp Top Contributors" }
+]
+keywords = ["hardware", "monitoring", "sensors", "temperature", "psensor", "btop", "braille", "tui", "linux"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Environment :: Console :: Curses",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: System :: Hardware",
+    "Topic :: System :: Monitoring",
+]
+
+[project.scripts]
+temp-top = "temp_top:main"
