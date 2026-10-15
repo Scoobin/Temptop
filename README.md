@@ -57,20 +57,6 @@
 
 ---
 
-## Installation & Quick Start
-
-### Direct Execution
-Temp Top is self-contained and uses standard Python:
-
-```bash
-# Run directly from the scratch directory
-cd /home/sam/.gemini/antigravity-ide/scratch/temp_top
-./temp_top.py
-
-# Or run using the symlink in ~/.local/bin
-temp-top
-```
-
 ### CLI Options
 
 ```
