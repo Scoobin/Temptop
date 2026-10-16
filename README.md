@@ -57,6 +57,40 @@
 
 ---
 
+## Installation
+
+### Nix Flake
+
+Run directly without installing:
+
+```bash
+nix run github:Scoobin/temptop
+```
+
+Install into your profile:
+
+```bash
+nix profile install github:Scoobin/temptop
+```
+
+Or add to a NixOS/home-manager configuration:
+
+```nix
+# flake.nix inputs
+inputs.temptop.url = "github:Scoobin/temptop";
+
+# Then in your packages list
+inputs.temptop.packages.${system}.default
+```
+
+For local development with all dependencies available:
+
+```bash
+nix develop
+```
+
+---
+
 ### CLI Options
 
 ```
@@ -92,6 +126,7 @@ Options:
 ## Device Manager Modal (`M` or `Enter`)
 
 When inside the Device Manager:
+
 - `Up` / `Down` (`k` / `j`): Select sensor
 - `Space`: Toggle visibility on graph
 - `R`: Rename sensor (opens interactive text entry prompt)

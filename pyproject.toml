@@ -31,3 +31,6 @@ classifiers = [
 
 [project.scripts]
 temp-top = "temp_top:main"
+
+[tool.setuptools]
+py-modules = ["config", "plotter", "sensors", "temp_top", "ui"]
